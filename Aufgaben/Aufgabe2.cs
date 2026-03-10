@@ -18,7 +18,7 @@
      * Keine Trennung von Daten und Zugriff: Statt Properties werden rohe Felder verwendet, wodurch keine Logik (z. B. Validierung) beim Setzen der Werte eingebaut werden kann.
      */
 
-    class Dragon
+    class Drag0n
     {
 
         // Aufgabe 2.2 - Verbessere Klasse mit Properties:
@@ -26,7 +26,7 @@
         public int Danger { get; set; }
 
         // Aufgabe 2.3 - Füge Konstruktor hinzu:
-        public Dragon(string name, int danger)
+        public Drag0n(string name, int danger)
         {
             Name = name;
             Danger = danger;
