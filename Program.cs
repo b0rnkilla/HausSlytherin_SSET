@@ -30,7 +30,20 @@ namespace HausSlytherin_SSET
             // Aufgabe 10.4 - Sortiere nach Name:
             var sortedByName = creatureList.OrderBy(c => c.Name);
             
-            
+            // Aufgabe 11.4 - Fange Fehler im Main:
+            try
+            {
+                // Aufgabe 11.3 - Werfe Exception wenn Level > 10:
+                var creaturee = new Creature("Giant Snake", 12);
+                if (creaturee.DangerLevel > 10)
+                {
+                    throw new DangerLevelException("Danger level exceeds the maximum allowed value of 10.");
+                }
+            }
+            catch (DangerLevelException ex)
+            {
+                Console.WriteLine($"Error: {ex.Message}");
+            }
 
 
             Console.ReadKey();
